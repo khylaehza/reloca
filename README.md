@@ -8,6 +8,6 @@ In this project directory, you can run
 
 Runs the app in the development mode
 
-### `npx kill-port 19000
+### `npx kill-port 19000`
 
 Ejects the app
