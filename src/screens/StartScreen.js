@@ -11,8 +11,7 @@ const StartScreen = () => {
 	};
 
 	const onCompInfo = () => {
-		// navigation.navigate('Login');
-		console.log('comp info');
+		navigation.navigate('Company');
 	};
 
 	return (
@@ -46,7 +45,7 @@ const StartScreen = () => {
 					/>
 
 					<CusButton
-						onPress={onStartPress}
+						onPress={onCompInfo}
 						text={'Company Information'}
 						type='COMPANY'
 					/>

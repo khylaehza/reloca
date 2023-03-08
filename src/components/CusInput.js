@@ -70,11 +70,13 @@ const styles = StyleSheet.create({
 		padding: 8,
 		marginVertical: 7,
 		alignSelf: 'center',
+		justifyContent: 'center',
 	},
 	input: {
 		color: Color.bl1,
 		fontFamily: 'Poppins-Regular',
-		fontSize: 16,
+		fontSize: 14,
+		justifyContent: 'flex-end',
 	},
 	error: {
 		color: Color.r100,

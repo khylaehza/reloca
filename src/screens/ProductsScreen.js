@@ -7,24 +7,9 @@ import {
 	ScrollView,
 } from 'react-native';
 import Color from '../themes/Colors';
-import { useState } from 'react';
-import CusButton from '../components/CusButton';
+import CusFlatlist from '../components/CusFlatlist';
 
 const ProductsScreen = ({ route }) => {
-	const [showNCR, setShowNCR] = useState(false);
-
-	const onNCRPressed = () => {
-		console.log('ncr pressed');
-	};
-
-	const NCRComponent = () => {
-		return (
-			<View>
-				<Image source={require('../../assets/products/reg-I.png')} />
-			</View>
-		);
-	};
-
 	const { uname } = route.params;
 	return (
 		<View style={styles.container}>
@@ -38,99 +23,14 @@ const ProductsScreen = ({ route }) => {
 					style={styles.logo}
 				/>
 				<View style={styles.region}>
-					<ScrollView scrollEventThrottle={16}>
-						<View style={{ flex: 1 }}>
-							<Text style={styles.text}>Hi! {uname}</Text>
-							<Text style={[styles.text, { fontSize: 18 }]}>
-								What are you looking for?
-							</Text>
-						</View>
-						<View style={{ height: 60, marginTop: 10 }}>
-							<ScrollView horizontal={true}>
-								<CusButton
-									type='REGIONS'
-									text={'NCR'}
-									onPress={() => setShowNCR(!showNCR)}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'CAR'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION I'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION II'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION III'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION IV - A'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'MIMAROPA'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION VI'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION VII'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION VIII'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION IX'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION X'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION XI'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION XII'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'REGION XIII'}
-									onPress={onNCRPressed}
-								/>
-								<CusButton
-									type='REGIONS'
-									text={'BARMM'}
-									onPress={onNCRPressed}
-								/>
-							</ScrollView>
-						</View>
-						<View>{showNCR && <NCRComponent />}</View>
-					</ScrollView>
+					<View style={{ flex: 1 }}>
+						<Text style={styles.text}>Hi! {uname}</Text>
+						<Text style={[styles.text, { fontSize: 18 }]}>
+							Where are you looking for?
+						</Text>
+
+						<CusFlatlist />
+					</View>
 				</View>
 			</ImageBackground>
 		</View>
