@@ -1,28 +1,36 @@
 {
-	"expo": {
-		"name": "Re-Loca",
-		"slug": "reloca",
-		"version": "1.0.0",
-		"orientation": "portrait",
-		"icon": "./assets/re-loca-logo.png",
-		"userInterfaceStyle": "light",
-		"splash": {
-			"image": "./assets/splash.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#FCECD0"
-		},
-		"assetBundlePatterns": ["**/*"],
-		"ios": {
-			"supportsTablet": true
-		},
-		"android": {
-			"adaptiveIcon": {
-				"foregroundImage": "./assets/re-loca-logo.png",
-				"backgroundColor": "#FCECD0"
-			}
-		},
-		"web": {
-			"favicon": "./assets/re-loca-logo.png"
-		}
-	}
+  "expo": {
+    "name": "Re-Loca",
+    "slug": "reloca",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/re-loca-logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FCECD0"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/re-loca-logo.png",
+        "backgroundColor": "#FCECD0"
+      },
+      "package": "com.khylaehza.reloca"
+    },
+    "web": {
+      "favicon": "./assets/re-loca-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a181020d-01be-4bc5-a6a3-3c76517b67bf"
+      }
+    }
+  }
 }
