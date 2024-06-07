@@ -1,13 +1,42 @@
-# Getting Started with RE-LOCA
+![Image](https://i.imgur.com/li6DI0W.jpeg)
 
-## Available Scripts
+<div>
+  <img align="right" width="20%" src="https://i.imgur.com/3drLm36.png" >
+</div>
 
-In this project directory, you can run
+## Features
 
-### `npx expo start`
+Reloca is a prototype for mobile app ecommerce for Philippine local products.
 
-Runs the app in the development mode
+* Start Page
+* Company Information
+* Login Page
+* Sign Up Page
+* Products per Region Page
+* Product Information Page
 
-### `npx kill-port 19000`
+## Installation
 
-Ejects the app
+1. **Clone the repository**: 
+
+    ```bash
+    git clone https://github.com/khylaehza/reloca
+    ```
+
+2. **Navigate to the project directory**: Change your current directory to the cloned project directory:
+
+    ```bash
+    cd reloca
+    ```
+
+3. **Install dependencies**: Install the required dependencies using npm:
+
+    ```bash
+    npm install
+    ```
+
+4. **Start the development server**: Start the Expo development server using `npx expo`:
+
+    ```bash
+    npx expo start
+    ```
